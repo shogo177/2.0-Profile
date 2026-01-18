@@ -28,6 +28,13 @@ html {
     width: 100%;
 }
 
+/* Global image handling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Header Styles */
 .header {
     position: fixed;
@@ -1360,6 +1367,32 @@ html {
     text-decoration: underline;
 }
 
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-grid {
+        gap: 50px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .nav-menu {
@@ -1697,5 +1730,106 @@ html {
 
     .footer-content {
         overflow-x: hidden;
+    }
+
+    /* Image and container overflow prevention */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .service-tab-icon img,
+    .tech-icon img,
+    .service-content-icon img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Service tabs mobile adjustments */
+    .services-tabs {
+        gap: 12px;
+    }
+
+    .service-tab {
+        padding: 15px 20px;
+    }
+
+    .service-tab-icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .service-tab h3 {
+        font-size: 16px;
+    }
+
+    .service-tab p {
+        font-size: 12px;
+    }
+
+    /* Tech cards mobile adjustments */
+    .tech-card {
+        padding: 20px;
+    }
+
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+    }
+
+    .tech-title {
+        font-size: 18px;
+    }
+
+    .tech-description {
+        font-size: 14px;
+    }
+
+    /* Service content mobile adjustments */
+    .service-content h2 {
+        font-size: 24px;
+    }
+
+    .service-content p {
+        font-size: 15px;
+    }
+
+    .service-features li {
+        font-size: 14px;
+        padding-left: 25px;
+    }
+
+    /* Prevent all container overflow */
+    .services-content,
+    .contact-form,
+    .contact-item,
+    .tech-card,
+    .service-tab {
+        overflow: hidden;
+    }
+
+    /* Section padding mobile */
+    .section {
+        padding: 60px 15px;
+    }
+
+    /* Footer mobile adjustments */
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-section h4 {
+        font-size: 16px;
+    }
+
+    .footer-link {
+        font-size: 13px;
+    }
+
+    .footer-description {
+        font-size: 13px;
     }
 }
