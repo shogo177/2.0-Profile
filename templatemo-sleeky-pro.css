@@ -1024,14 +1024,14 @@ html {
 .contact-form {
     background: rgba(45, 36, 22, 0.95);
     backdrop-filter: blur(20px);
-    padding: 60px 50px;
-    border-radius: 25px;
+    padding: 40px 30px;
+    border-radius: 20px;
     border: 1px solid rgba(255, 215, 0, 0.2);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
@@ -1039,16 +1039,16 @@ html {
     margin-bottom: 8px;
     color: #FFD700;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 18px 20px;
+    padding: 14px 16px;
     border: 2px solid rgba(255, 215, 0, 0.2);
-    border-radius: 12px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 15px;
     transition: all 0.3s ease;
     background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(10px);
@@ -1064,7 +1064,7 @@ html {
 }
 
 .form-group textarea {
-    height: 140px;
+    height: 110px;
     resize: vertical;
     font-family: inherit;
     font-weight: 400;
@@ -1074,16 +1074,17 @@ html {
 .submit-btn {
     background: linear-gradient(135deg, #FFD700, #FFA500);
     color: #1a1a1a;
-    padding: 18px 40px;
+    padding: 14px 30px;
     border: none;
-    border-radius: 12px;
-    font-size: 18px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     position: relative;
     overflow: hidden;
+}
 }
 
 .submit-btn::before {
@@ -1107,46 +1108,47 @@ html {
 }
 
 .contact-info {
-    padding: 60px 40px;
+    padding: 40px 20px;
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
-    padding: 25px;
+    margin-bottom: 25px;
+    padding: 18px;
     background: rgba(45, 36, 22, 0.8);
     backdrop-filter: blur(20px);
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid rgba(255, 215, 0, 0.2);
     transition: all 0.3s ease;
+    gap: 15px;
 }
 
 .contact-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: linear-gradient(135deg, #FFD700, #FFA500);
-    border-radius: 15px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
     color: #1a1a1a;
-    font-size: 24px;
+    font-size: 20px;
     flex-shrink: 0;
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.3);
 }
 
 .contact-details h4 {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
     color: #FFD700;
     font-weight: 600;
+}
 }
 
 .contact-details p {
@@ -1607,20 +1609,79 @@ html {
         font-size: 13px;
     }
 
-    /* Hide pixel GIF on mobile to prevent horizontal scroll */
+    /* Hide pixel GIF on desktop but show on mobile */
     .footer-pixel-gif {
-        display: none !important;
+        display: block !important;
+        position: static !important;
+        width: 120px !important;
+        height: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+        margin-top: 20px;
     }
 
     /* Responsive GIF sizing on mobile */
     .service-tab-gif {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
     .tech-card-gif {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Contact form mobile styling */
+    .contact-form {
+        padding: 25px 15px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 12px 12px;
+    }
+
+    .form-group textarea {
+        height: 100px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    /* Contact info mobile styling */
+    .contact-info {
+        padding: 20px 10px;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
+        padding: 12px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .contact-details h4 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .contact-details p {
+        font-size: 13px;
     }
 
     /* Ensure body has no horizontal overflow */
