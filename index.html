@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee Dev - Full Stack Web Developer Portfolio</title>
+    <link rel="stylesheet" href="templatemo-sleeky-pro.css">
+<!-- TemplateMo 598 Sleeky Pro
+https://templatemo.com/tm-598-sleeky-pro
+-->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#7FFFD4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" opacity="0.1"/>
+                    <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="35" cy="40" r="3" fill="url(#logoGradient)"/>
+                    <circle cx="50" cy="55" r="3" fill="url(#logoGradient)"/>
+                    <circle cx="65" cy="35" r="3" fill="url(#logoGradient)"/>
+                    <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#logoGradient)" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">Lee.dev - Studio</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="progress-ring">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="slider-stage" id="sliderStage"></div>
+            <!-- You can edit slider images in JS file -->
+            <!-- Edit templatemo-sleeky-scripts.js for image path / image filenames -->
+            <div class="text-overlay" id="textOverlay">
+                <h2 class="slide-title" id="slideTitle">Mountain Peak</h2>
+                <p class="slide-description" id="slideDescription">Majestic snow-capped mountains reaching towards the endless sky, showcasing nature's raw beauty and power.</p>
+            </div>
+            
+            <button class="nav-arrow prev" id="prevArrow" aria-label="Previous"></button>
+            <button class="nav-arrow next" id="nextArrow" aria-label="Next"></button>
+            
+            <div class="controls">
+                <button class="control-btn play-pause-btn" id="playPauseBtn" title="Play/Pause">
+                    <span class="play-icon"></span>
+                    <span class="pause-icon"></span>
+                </button>
+            </div>
+            
+            <div class="dots" id="dots"></div>
+            <div class="thumbnails-container" id="thumbnails"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">Full-stack web development solutions powered by cutting-edge technology and expertise in modern frameworks and best practices.</p>
+            </div>
+            
+            <div class="services-container">
+                <div class="services-tabs">
+                    <div class="service-tab active" data-service="photography">
+                        <span class="service-tab-icon">
+                            <img src="images/programming_2011760.png" alt="programing icon" style="width: 50px; height: 50px; object-fit: contain;">
+                        </span>
+                        <h3>Web Development</h3>
+                        <p>Responsive & performant web apps</p>
+                    </div>
+                    
+                    <div class="service-tab" data-service="expeditions">
+                        <span class="service-tab-icon"><img src="images/computer.gif" alt="programing icon" style="width: 80px; height: 80px; object-fit: contain;"></span>
+                        <h3>UI/UX Design</h3>
+                        <p>Beautiful user interfaces</p>
+                    </div>
+                    
+                    <div class="service-tab" data-service="prints">
+                        <span class="service-tab-icon"><img src="images/rocketok.gif" alt="programing icon" style="width: 80px; height: 80px; object-fit: contain;"></span>
+                        <h3>Deployment & DevOps</h3>
+                        <p>Cloud & server management</p>
+                    </div>
+                </div>
+                
+                <div class="services-content">
+                    <div class="service-content active" id="photography">
+                        <div class="service-content-icon">
+                            <img src="images/graphics-software.gif" alt="animatedgraphicsoftware icon" style="width: 80px; height: 80px; object-fit: contain;">
+                        </div>
+                        <h2>Full-Stack Web Development</h2>
+                        <p>I specialize in building scalable, performant web applications using modern technologies like React, Node.js, and TypeScript. I deliver production-ready code with comprehensive testing, documentation, and performance optimization built in from day one.</p>
+                        <p>My development approach combines best practices in architecture, security, and maintainability to create applications that scale with your business needs.</p>
+                        <ul class="service-features">
+                            <li>React, Vue, Angular frontend frameworks</li>
+                            <li>Node.js, Python, TypeScript backends</li>
+                            <li>RESTful APIs and GraphQL design</li>
+                            <li>Database optimization and design</li>
+                            <li>Responsive design and performance optimization</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-content" id="expeditions">
+                        <div class="service-content-icon">�</div>
+                        <h2>UI/UX Design & Prototyping</h2>
+                        <p>I create beautiful, intuitive user interfaces that prioritize user experience and accessibility. From wireframes to high-fidelity prototypes, I ensure every interaction is thoughtful and purposeful.</p>
+                        <p>My design process combines user research, competitive analysis, and iterative testing to create interfaces that users love and businesses thrive with.</p>
+                        <ul class="service-features">
+                            <li>Figma & Sketch design tools</li>
+                            <li>Wireframing and prototyping</li>
+                            <li>User research and usability testing</li>
+                            <li>Accessibility (WCAG) compliance</li>
+                            <li>Design system documentation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-content" id="prints">
+                        <div class="service-content-icon">🚀</div>
+                        <h2>DevOps & Cloud Infrastructure</h2>
+                        <p>I manage full deployment pipelines and cloud infrastructure across AWS, Azure, and Google Cloud platforms. From containerization with Docker to orchestration with Kubernetes, I ensure your applications run reliably at scale.</p>
+                        <p>My approach emphasizes automation, monitoring, and continuous improvement to keep your applications performant and secure 24/7.</p>
+                        <ul class="service-features">
+                            <li>Docker containerization and Kubernetes</li>
+                            <li>AWS, Azure, and GCP expertise</li>
+                            <li>CI/CD pipeline setup (GitHub Actions, GitLab)</li>
+                            <li>Monitoring and observability (Datadog, New Relic)</li>
+                            <li>Security best practices and compliance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">My Development Journey</h2>
+                <p class="section-subtitle">From learning to build my first website to architecting enterprise-scale applications, my path has been driven by a passion for clean code and great user experiences.</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-title">First Lines of Code</div>
+                        <div class="timeline-description">Started learning web development with HTML, CSS, and JavaScript. Built my first portfolio website using vanilla JS and static hosting.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-title">React & Modern Frameworks</div>
+                        <div class="timeline-description">Mastered React ecosystem and state management. Built and deployed 10+ production applications serving thousands of users monthly.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-title">Full-Stack Expertise</div>
+                        <div class="timeline-description">Expanded to backend development with Node.js and Python. Architected microservices and APIs powering mobile and web applications at scale.</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-title">Cloud & DevOps Leadership</div>
+                        <div class="timeline-description">Led infrastructure modernization using Kubernetes and cloud-native technologies. Reduced deployment time by 80% and improved system reliability to 99.99% uptime.</div>
+                    </div>
+                </div>
+                
+                <div class="about-tech">
+                    <div class="tech-card">
+                        <div class="tech-icon">⚛️</div>
+                        <div class="tech-title">Modern Frontend Stack</div>
+                        <div class="tech-description">Expert proficiency in React, Vue.js, TypeScript, and modern CSS frameworks. Building performant, accessible, and maintainable user interfaces with component-driven development.</div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon"><img src="images/api_17122773-ezgif.com-gif-maker (1).gif" alt="API icon" style="width: 80px; height: 80px; object-fit: contain;"></div>
+                        <div class="tech-title">Backend Development</div>
+                        <div class="tech-description">Full-stack capabilities with Node.js, Python, PostgreSQL, and MongoDB. Designing scalable APIs, database optimization, and serverless architectures for enterprise applications.</div>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon"> <img src="imageS/cloud database.gif" alt="API icon" style="width: 80px; height: 80px; object-fit: contain;"></div>
+                        <div class="tech-title">Cloud & Infrastructure</div>
+                        <div class="tech-description">AWS, Azure, and GCP expertise. Docker, Kubernetes, CI/CD pipelines, and monitoring with 99.99% uptime SLAs. Security-first approach to infrastructure design.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-futuristic">
+                <div class="stat-futuristic">
+                    <h4>50+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>30+</h4>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>99.99%</h4>
+                    <p>Uptime</p>
+                </div>
+                <div class="stat-futuristic">
+                    <h4>10+</h4>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your next project? I'd love to hear about your ideas and discuss how I can help bring your vision to life.</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project requirements and timeline..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>(Remote) Available<br> Wisconsin, USA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hardworklee@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>https://www.linkedin.com/in/leedaytrade/</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h4>Response Time</h4>
+                            <p>Usually within 48 hours<br>Open to opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FF6B6B"/>
+                                    <stop offset="100%" style="stop-color:#7FFFD4"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerLogoGradient)" opacity="0.1"/>
+                            <path d="M20 60 L35 40 L50 55 L65 35 L80 50" stroke="url(#footerLogoGradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="35" cy="40" r="3" fill="url(#footerLogoGradient)"/>
+                            <circle cx="50" cy="55" r="3" fill="url(#footerLogoGradient)"/>
+                            <circle cx="65" cy="35" r="3" fill="url(#footerLogoGradient)"/>
+                            <rect x="25" y="65" width="50" height="15" rx="7" fill="url(#footerLogoGradient)" opacity="0.3"/>
+                        </svg>
+                        <span class="footer-logo-text">Sleeky</span>
+                    </div>
+                    <p class="footer-description">Building beautiful, scalable web applications with modern technologies and best practices. Full-stack development, UI/UX design, and cloud infrastructure expertise.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Web Development</a>
+                        <a href="#" class="footer-link">UI/UX Design</a>
+                        <a href="#" class="footer-link">DevOps & Cloud</a>
+                        <a href="#" class="footer-link">Consulting</a>
+                        <a href="#" class="footer-link">Training</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">About Us</a>
+                        <a href="#" class="footer-link">Our Story</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Press</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Shipping Info</a>
+                        <a href="#" class="footer-link">Returns</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2026 Lee Dev. All rights reserved.
+                </div>
+                
+                <img src="images/raining-pixel.gif" alt="Pixel Art Character" style="position: absolute; bottom: 0; left: -330px; width: 280px; height: auto;">
+            </div>
+        </div>
+    </footer>
+
+    <script src="templatemo-sleeky-scripts.js"></script>
+</body>
+</html>
