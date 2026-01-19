@@ -639,6 +639,30 @@ img {
     opacity: 0.3;
 }
 
+.services-profile-image {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    object-fit: cover;
+    /* Static on desktop - stays in place */
+}
+
+.mobile-services-image {
+    display: none;
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
+    margin: 20px auto 30px;
+    background: transparent;
+}
+
 .services-container {
     display: grid;
     grid-template-columns: 350px 1fr;
@@ -1395,6 +1419,14 @@ img {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .mobile-services-image {
+        display: block;
+    }
+    
+    .services-profile-image {
+        display: none;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1832,5 +1864,17 @@ img {
 
     .footer-description {
         font-size: 13px;
+    }
+
+    .services-profile-image {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-profile-image {
+        width: 120px;
+        top: 20px;
+        left: 20px;
     }
 }
